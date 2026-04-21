@@ -1,9 +1,17 @@
 import Field from './Field'
 import Button from './Button'
 
-const AddTaskForm = () => {
-    return (
-    <form className="todo__form">
+const AddTaskForm = (props) => {
+  const {
+    addTask,
+  } = props
+
+  const onSubmit = (event) => {
+    event.preventDefault()
+    addTask()
+  }
+  return (
+    <form className="todo__form" onSubmit={onSubmit}>
         <Field 
           className="todo__field"
           label="New Task title"
