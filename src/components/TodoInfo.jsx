@@ -16,8 +16,8 @@ const TodoInfo = (props) => {
         </div>
         {hasTasks && (
           <button 
-           className='todo__delete-all-button'
-           type='button'
+            className='todo__delete-all-button'
+            type='button'
             onClick = {onDeleteAllButtonClick}
            >
            Delete all
