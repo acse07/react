@@ -4,7 +4,8 @@ import Field from './Field'
 
 const SearchTaskForm = (props) => {
   const {
-    onSearchInput
+    searchQuery,
+    setSearchQuery
   } = props
     return (
       <form
@@ -14,11 +15,12 @@ const SearchTaskForm = (props) => {
        }}
       >
         <Field
-          onInput= {(event) => onSearchInput(event.target.value)}
+          onInput= {(event) => setSearchQuery(event.target.value)}
           className = "todo__field"
           label = "Search Task"
           id = "search-task"
           type = "search"
+          value = {searchQuery}
          />
       </form>
     )

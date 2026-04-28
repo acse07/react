@@ -1,6 +1,6 @@
 const TodoItem = (props) => {
 
-  console.log('props:', props)
+  // console.log('props:', props)
   const {
     className = '',
     id,
