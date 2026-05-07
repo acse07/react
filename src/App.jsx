@@ -1,3 +1,4 @@
+import { StrictMode } from 'react'
 import Todo from './components/Todo'
 
 const App = () => {

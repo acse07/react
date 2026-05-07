@@ -1,4 +1,6 @@
+import {memo} from 'react'
 const TodoItem = (props) => {
+  // console.log('todo item ')
 
   // console.log('props:', props)
   const {
@@ -52,4 +54,4 @@ const TodoItem = (props) => {
     )
 }
 
-export default TodoItem
+export default memo(TodoItem)
